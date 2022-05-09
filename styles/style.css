@@ -197,6 +197,50 @@ figcaption {
     transform: translate(0);
   }
 }
+@media screen and (max-width: 1200px) {
+  .container {
+    margin: 0 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  figcaption {
+    flex-basis: 100%;
+  }
+  .slider .moving-item {
+    top: calc(60vh + 35px);
+    right: calc(50% - 80px);
+    min-height: 20px;
+  }
+  .picture {
+    margin-bottom: 100px;
+    max-height: 60vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    margin: 0 10px;
+  }
+  body {
+    font-size: 18px;
+  }
+  .picture {
+    max-height: 50vh;
+  }
+  .slider .moving-item {
+    top: calc(50vh + 35px);
+  }
+}
+@media screen and (max-width: 425px) {
+  .picture {
+    max-height: 40vh;
+  }
+  .slider .moving-item {
+    top: calc(40vh + 35px);
+  }
+  .picture {
+    background-size: 100% 100%;
+  }
+}
 
 /*--------------------*/
 /*Шрифты*/
