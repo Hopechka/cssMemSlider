@@ -1,6 +1,6 @@
-/* * {
+* {
   outline: 1px solid red;
-} */
+}
 
 /*Обнуление*/
 * {
@@ -115,4 +115,104 @@ h6 {
   src: url('../assets/fonts/Roboto-BoldItalic.ttf') format('truetype');
   font-style: italic;
   font-weight: bold;
+}
+/*--------------------*/
+/*Основные настройки*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  line-height: 125%;
+  color: beige;
+  margin: 0 auto;
+  background: #497449;
+}
+.container {
+  max-width: 1280px;
+  margin: 20px auto;
+}
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+.items {
+  position: relative;
+  left: 0;
+  width: 500%;
+}
+
+.slide {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 20%;
+  position: relative;
+  float: left;
+  /* animation: 10s slide infinite; */
+}
+
+.picture {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 1000px;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  border-radius: 16px;
+}
+.item-1 {
+  background-image: url('../assets/images/1.jpeg');
+}
+.item-2 {
+  background-image: url('../assets/images/2.jpeg');
+}
+.item-3 {
+  background-image: url('../assets/images/3.jpeg');
+}
+.item-4 {
+  background-image: url('../assets/images/4.jpeg');
+}
+.item-5 {
+  background-image: url('../assets/images/5.jpeg');
+}
+h3 {
+  flex-basis: 80%;
+}
+
+.moving-item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  height: 100px;
+}
+.circle {
+  border: 1px solid beige;
+  width: 20px;
+  height: 20px;
+  border-radius: 16px;
+  margin: 5px;
+  background: beige;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.active {
+  background: none;
+}
+.circle:hover {
+  background: #94e494;
+}
+.next:active,
+.slide {
+  animation: 3s slide 1 ease-in-out;
+  box-shadow: 0px 0px 10px rgba(245, 245, 220, 0.5);
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -80%;
+  }
 }
