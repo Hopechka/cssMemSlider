@@ -85,8 +85,10 @@ body {
 }
 .container {
   max-width: 1280px;
-  margin: 40px auto;
+  margin: 0 auto;
   overflow: hidden;
+  padding-top: 40px;
+  box-sizing: border-box;
 }
 
 .items {
@@ -128,7 +130,7 @@ body {
   flex-basis: 100%;
   margin-bottom: 40px;
   border-radius: 16px;
-  box-shadow: 0px 0px 20px rgba(245, 245, 220, 0.5);
+  /* box-shadow: 0px 0px 20px rgba(245, 245, 220, 0.5); */
   box-sizing: border-box;
 }
 .item-1 {
@@ -213,7 +215,8 @@ figcaption {
 }
 @media screen and (max-width: 767px) {
   .container {
-    margin: 40px 20px;
+    margin: 0 20px;
+    padding-top: 20px;
   }
   .picture {
     max-height: 50vh;
@@ -222,7 +225,7 @@ figcaption {
 }
 @media screen and (max-width: 425px) {
   .container {
-    margin: 20px 10px;
+    margin: 0 10px;
   }
   .wrapper {
     row-gap: 20px;
