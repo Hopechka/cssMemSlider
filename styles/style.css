@@ -100,7 +100,7 @@ body {
 }
 
 .slide:target {
-  animation: 0.5s slide 1 ease-in-out;
+  animation: 0.5s turn 1 ease-in-out;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -108,16 +108,14 @@ body {
   width: 100%;
   background: var(--bg-color);
 }
-@keyframes slide {
+@keyframes turn {
   0% {
     transform: rotateZ(0deg);
-    /* transform: translate(-100%); */
     /* transform: scale(0); */
   }
 
   100% {
     transform: rotateZ(-360deg);
-    /* transform: translate(0%); */
     /* transform: scale(1); */
   }
 }
@@ -157,6 +155,16 @@ body {
 }
 figcaption {
   min-height: 100px;
+  animation: 1s slide 1 ease-in-out;
+}
+@keyframes slide {
+  50% {
+    transform: translate(-100%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
 }
 
 .moving-item {
