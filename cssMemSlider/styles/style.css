@@ -72,10 +72,11 @@ body {
   background: var(--bg-color);
 }
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  max-width: 75rem;
   margin: 0 auto;
   overflow: hidden;
-  padding-top: 40px;
+  padding-top: 2.5rem;
   box-sizing: border-box;
 }
 
@@ -114,7 +115,7 @@ body {
   background-size: cover;
   height: 75vh;
   flex-basis: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   border-radius: 1rem;
   box-sizing: border-box;
 }
@@ -139,7 +140,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  column-gap: 20px;
+  column-gap: 1.25rem;
 }
 figcaption {
   min-height: 12vh;
@@ -167,7 +168,7 @@ li {
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 1rem;
-  margin: 10px;
+  margin: 0.625rem;
   background: var(--text-color);
   transition: all 0.5s;
 }
@@ -179,8 +180,8 @@ li {
   text-decoration: none;
   width: 2.5rem;
   height: 2.5rem;
-  margin-top: -10px;
-  margin-left: -10px;
+  margin-top: -0.625rem;
+  margin-left: -0.625rem;
   color: none;
 }
 .circle {
@@ -191,7 +192,7 @@ li {
   background: #94e494;
 }
 .circle:active {
-  box-shadow: 0px 0px 20px rgba(245, 245, 220, 0.8);
+  box-shadow: 0 0 1.25rem rgba(245, 245, 220, 0.8);
   background: none;
 }
 
@@ -212,7 +213,7 @@ li {
   .wrapper {
     flex-direction: column-reverse;
     align-items: center;
-    row-gap: 30px;
+    row-gap: 1.875rem;
   }
   .picture {
     max-height: 65vh;
@@ -227,7 +228,7 @@ li {
     padding-top: 20px;
   }
   .wrapper {
-    row-gap: 20px;
+    row-gap: 1.25rem;
   }
 
   .picture {
@@ -238,12 +239,10 @@ li {
   .container {
     margin: 0 10px;
   }
-  .wrapper {
-    row-gap: 20px;
-  }
+
   .picture {
     max-height: 45vh;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     background-size: 100% 100%;
   }
 }
